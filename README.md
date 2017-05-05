@@ -1,24 +1,27 @@
-# README
+# [onebitcode_exchange](http://onebitcode-exchange-jonas.herokuapp.com)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![ruby](https://img.shields.io/badge/Ruby-2.3.1-red.svg)
+![rails](https://img.shields.io/badge/Rails-5.0.1-red.svg)
+![docker](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)
+![Codeship Status for JonasAzevedo/onebitcode_exchange](https://app.codeship.com/projects/217039)
 
-Things you may want to cover:
+# Sobre
 
-* Ruby version
+O OneBitCodeExchange é um app web para converter valores de uma moeda para outra.
 
-* System dependencies
+# Layout da Aplicação
 
-* Configuration
+(/layout_aplicação.png)
 
-* Database creation
+# Dependências
 
-* Database initialization
+[Fixer API](http://fixer.io/)
 
-* How to run the test suite
+# Instalação
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Instale o Docker (https://docs.docker.com/engine/installation/)
+* Clone este repositório
+* No diretório que clonou este repositório execute:
+  * docker-compose build
+  * docker-compose run --rm website rails db:create db:migrate
+  * docker-compose up
