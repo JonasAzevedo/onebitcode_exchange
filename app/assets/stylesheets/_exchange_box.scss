@@ -18,6 +18,15 @@
           border-color: #5bc0de;
           border-radius: 0;
         }
+        .loading{
+          align: center;
+          display: none;
+          .imgLoading{
+            position:relative;
+            left:50%;            
+            margin-left:-50px;
+          }
+        }
       }
     }
   }
