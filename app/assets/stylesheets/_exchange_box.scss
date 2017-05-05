@@ -23,10 +23,13 @@
           display: none;
           .imgLoading{
             position:relative;
-            left:50%;            
+            left:50%;
             margin-left:-50px;
           }
         }
+        .destinationTextChange {
+          margin: 10px auto;
+        }
       }
     }
-  }
+}
