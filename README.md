@@ -12,7 +12,7 @@ O OneBitCodeExchange é um app web para converter valores de uma moeda para outr
 
 # Layout da Aplicação
 
-![OneBitCodeExchange] (https://raw.githubusercontent.com/JonasAzevedo/onebitcode_exchange/master/public/layout_aplicação.png)
+![OneBitCodeExchange](https://raw.githubusercontent.com/JonasAzevedo/onebitcode_exchange/master/public/layout_aplicação.png)
 
 # Dependências
 
@@ -22,7 +22,7 @@ O OneBitCodeExchange é um app web para converter valores de uma moeda para outr
 
 * Instale o [Docker](https://docs.docker.com/engine/installation/)
 * Clone este repositório
-* No diretório que clonou este repositório execute:
+* No diretório que clonou o repositório execute:
   * docker-compose build
   * docker-compose run --rm website rails db:create db:migrate
   * docker-compose up
