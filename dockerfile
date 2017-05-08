@@ -1,3 +1,4 @@
+# Informa a imagem
 FROM ruby:2.3-slim
 # Instala as nossas dependências
 RUN apt-get update && apt-get install -qq -y --no-install-recommends \

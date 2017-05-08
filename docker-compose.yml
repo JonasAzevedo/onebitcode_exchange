@@ -1,3 +1,5 @@
+# responsável por orquestrar entre as várias imagens docker
+# para tudo subir em um único comando e estar no mesmo networking
 version: '2'
 
 services:
@@ -7,13 +9,18 @@ services:
       - 'postgres:/var/lib/postgresql/data'
 
   website:
+    # serviço do site depende do postgtres
     depends_on:
       - 'postgres'
+    # build é dockerfile
     build: .
+    # libera a porta 3000
     ports:
       - '3000:3000'
+    # conecta a pasta onde este dockerfile está com a pasta dentro do container
     volumes:
       - '.:/usr/src/app'
 
+# permite usar o postgres em outro lugar
 volumes:
   postgres:
